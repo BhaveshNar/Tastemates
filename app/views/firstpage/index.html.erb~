@@ -1,15 +1,21 @@
 <body>
-<div id="first_heading">
-	<h1 style="color:black;font-size:70px;">Tastemates</h1>
+<div class="row topbar">
+	<div class="col-mid-12 col-xs-12 name">TASTEMATES</div>
 </div>
-
-<div class ="buttons">
-	<button>Sign Up</button>	 
-	<button>Sign In</button>
-</div>
+<div class="row waste"></div>
+<div class="row middle">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6 button">
+		<div class="row">
+			<div class="col-sm-12">
+				<button type="button" class="btn btn-primary btn-lg active signup">Signup</button></div></div>
+	<div class="row">
+			<div class="col-sm-12 ">
+				<button type="button" class="btn btn-primary btn-lg active signin">signin</button></div></div></div>
+	<div class="col-sm-3"></div>
+</div>	
 	
-	<%= link_to 'Home', controller: 'firstpage' %>
 	<%= link_to 'About', controller: 'firstpage' %>
+	<%= link_to '2', controller: 'firstpage' %>
 	<%= link_to '3', controller: 'firstpage' %>
-	<%= link_to '4', controller: 'firstpage' %>
 </body>
