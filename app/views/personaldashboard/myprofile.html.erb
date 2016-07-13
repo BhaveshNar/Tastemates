@@ -7,21 +7,28 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
-<h1 style="font-size:50px;">Sign In</h1>
-
-<%= form_for :secondpage do |f| %>
+<h1>My Profile</h1>
+<%= form_for :my_profile do |f| %>
 <p>
-	<%= f.label :Username %> <br>
-	<%= f.text_field :Username %>
+<%= f.label :Name %><br>
+<%= f.text_field :Name %>
 </p>
 
 <p>
-	<%= f.label :Password %> <br>
-	<%= f.text_field :Password %>
+<%= f.label :Username %> <br>
+<%= f.text_field :username %>
 </p>
 
 <p>
-	<%= f.submit %>
+<%= f.label :Email_Id %> <br>
+<%= f.text_field :Email_Id %>
+</p>
+
+<p>
+<%= f.label :contact %> <br>
+<%= f.text_field :contact %>
+</p> 
+<p>
+<%= f.submit %>
 </p>
 <% end %>
-<p>Find me in app/views/secondpage/signin.html.erb</p>

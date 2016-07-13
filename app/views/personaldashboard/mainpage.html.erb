@@ -1,0 +1,37 @@
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+<body>
+	<div class="top_bar">
+			<div class="topbarkebuttons" id="home"><%= link_to 'Home', controller: 'personaldashboard', action: 'mainpage' %></div>
+			<div class="topbarkebuttons"id="myprofile"><%= link_to 'My Profile', controller: 'personaldashboard', action: 'myprofile' %></div>
+			<div class="topbarkebuttons"id="three"><%= link_to '3', controller: 'personaldashboard', action: 'three' %></div>
+			<div class="topbarkebuttons" id="four"><%= link_to '4', controller: 'personaldashboard', action: 'four' %></div>
+
+			<div class="topbarkebuttons"id="logout"><%= link_to 'Logout', controller: 'secondpage', action: 'signin' %></div>
+	</div>
+	
+	<div class="mainworkspace">
+	<div class="mainworkspace" id="letusknowwhatyoulike"> <button>Let Us Know What You Like</button></div>
+	<div class="mainworkspace" id="tastemates"><button>Tastemates</button></div>
+	</div>			
+
+	<div id="sidepanel">
+			<div class="sidepanelkebuttons" id="dp"></div>
+			<div class="sidepanelkebuttons" id="editprofile"> <%= link_to 'Edit Profile', controller: 'personaldashboard', action: 'myprofile' %></div>
+			<div class="sidepanelkebuttons" id="tastehistory"> <%= link_to 'Taste History', controller: 'personaldashboard', action: 'tastehistory' %></div>
+			<div class="sidepanelkebuttons" id="recentorders"> <%= link_to 'Recent Orders', controller: 'personaldashboard', action: 'recentorders' %></div>
+			<div class="sidepanelkebuttons" id="friendslist"> <%= link_to 'Friends List', controller: 'personaldashboard', action: 'friendslist' %></div>
+			<div class="sidepanelkebuttons" id="findfriendswithsametaste"> <%= link_to 'Find Friends With Same Taste', controller: 'personaldashboard', action: 'findfriendswithsametaste' %></div>
+			<div class="sidepanelkebuttons" id="orderonline"> <%= link_to 'Order Online', controller: 'personaldashboard', action: 'orderonline' %></div>
+	</div>
+<div>
+<p>Find me in app/views/personaldashboard/mainpage.html.erb</p>
+<p>and css file in app/assets/stylesheets/personaldashboard.css.scss</p>
+</body>

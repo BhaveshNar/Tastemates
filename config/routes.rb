@@ -1,5 +1,16 @@
 Rails.application.routes.draw do
   
+  get 'personaldashboard/mainpage'
+  get 'personaldashboard/myprofile'
+  get 'personaldashboard/three'
+  get 'personaldashboard/four'
+  get 'personaldashboard/dp'
+  get 'personaldashboard/editprofile'
+  get 'personaldashboard/tastehistory'
+  get 'personaldashboard/recentorders'
+  get 'personaldashboard/friendslist'
+  get 'personaldashboard/findfriendswithsametaste'
+  get 'personaldashboard/orderonline'
   get 'secondpage/signup'
 
   get 'secondpage/signin'

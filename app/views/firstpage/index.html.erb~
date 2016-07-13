@@ -1,0 +1,15 @@
+<body>
+<div id="first_heading">
+	<h1 style="color:black;font-size:70px;">Tastemates</h1>
+</div>
+
+<div class ="buttons">
+	<button>Sign Up</button>	 
+	<button>Sign In</button>
+</div>
+	
+	<%= link_to 'Home', controller: 'firstpage' %>
+	<%= link_to 'About', controller: 'firstpage' %>
+	<%= link_to '3', controller: 'firstpage' %>
+	<%= link_to '4', controller: 'firstpage' %>
+</body>
