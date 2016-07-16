@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  resources :users
+  resources :dishes
   get 'personaldashboard/mainpage'
   get 'personaldashboard/myprofile'
   get 'personaldashboard/three'

@@ -1,0 +1,37 @@
+<%= form_for @dish, html: { multipart: true } do |f| %>
+  <% if @dish.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@dish.errors.count, "error") %> prohibited this dish from being saved:</h2>
+
+      <ul>
+      <% @dish.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <%= f.file_field :image %>
+  <div class="field">
+    <%= f.label :dish_name %><br>
+    <%= f.text_field :dish_name %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :salty %><br>
+    <%= f.check_box :salty %>
+  </div>
+  <div class="field">
+    <%= f.label :sweet %><br>
+    <%= f.check_box :sweet %>
+  </div>
+  <div class="field">
+    <%= f.label :sour %><br>
+    <%= f.check_box :sour %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
