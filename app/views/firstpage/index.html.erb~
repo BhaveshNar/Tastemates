@@ -1,13 +1,14 @@
 <body>
 <div class="row topbar">
-	<div class="col-sm-7 col-xs-12 name">TASTEMATES</div>
-	<div class="col-sm-2 signup">
+	<div class="col-sm-8 col-xs-12 container name"><div class=" align">TASTEMATES</div></div>
+	<div class="col-sm-4 signup">
 		<button type="button" class="sign"><b>SignUp</b></button>
-	
 		<button type="button" class="sign"><b>SignIn</b></button></div>
 </div>
+<div class="row waste"></div>
+<div class="row">
+<div class="col-sm-0 col-xs-0"></div>
+<div class="container pics col-sm-10 col-xs-12"><%= image_tag("1.jpg", 	:size => "870x380", :crop => :fill)%></div></div>
+	<div class="col-sm-1 col-xs-0"></div>
 	
-	<%= link_to 'About', controller: 'firstpage' %>
-	<%= link_to '2', controller: 'firstpage' %>
-	<%= link_to '3', controller: 'firstpage' %>
 </body>
